@@ -34,6 +34,10 @@ class XmsinterpConan(ConanFile):
         self.options['xmscore'].pybind = self.options.pybind
         self.options['xmscore'].testing = self.options.testing
 
+        self.options['xmsgeom'].xms = self.options.xms
+        self.options['xmsgeom'].pybind = self.options.pybind
+        self.options['xmsgeom'].testing = self.options.testing
+
         if s_compiler == "apple-clang" and s_os == 'Linux':
             raise ConanException("Clang on Linux is not supported.")
 
@@ -56,6 +60,7 @@ class XmsinterpConan(ConanFile):
 
         # Use the dev version of XMSCore
         self.requires("xmscore/[>=1.0.36]@aquaveo/stable")
+        self.requires("xmsgeom/[>=1.0.0]@aquaveo/stable")
 
     def build(self):
         cmake = CMake(self)

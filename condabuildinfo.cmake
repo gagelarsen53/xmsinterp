@@ -1,6 +1,7 @@
-set(EXT_INCLUDE_DIRS "${CMAKE_INSTALL_PREFIX}/include/xmscore")
+set(EXT_INCLUDE_DIRS "${CMAKE_INSTALL_PREFIX}/include/xmscore"
+                     "${CMAKE_INSTALL_PREFIX}/include/xmsgeom")
 set(EXT_LIB_DIRS "${CMAKE_INSTALL_PREFIX}/lib")
-set(EXT_LIBS xmscore)
+set(EXT_LIBS xmscore xmsgeom)
 
 set(Boost_USE_STATIC_LIBS TRUE)
 find_package(Boost REQUIRED log_setup log system filesystem serialization timer)

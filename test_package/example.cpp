@@ -1,6 +1,6 @@
 #include <iostream>
 #include <sstream>
-#include <xmsinterp/geometry/geoms.h>
+#include <xmsgeom/geometry/geoms.h>
 
 int main() {
   std::stringstream ss;

@@ -27,8 +27,8 @@
 #include <xmscore/math/math.h>
 #include <xmscore/misc/XmError.h>
 #include <xmscore/stl/utility.h>
-#include <xmsinterp/geometry/geoms.h>
-#include <xmsinterp/geometry/GmTriSearch.h>
+#include <xmsgeom/geometry/geoms.h>
+#include <xmsgeom/geometry/GmTriSearch.h>
 #include <xmsinterp/interpolate/detail/NodalFunc.h>
 #include <xmscore/misc/xmstype.h>
 

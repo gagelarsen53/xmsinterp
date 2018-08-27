@@ -9,7 +9,6 @@
 //----- Included files ---------------------------------------------------------
 #include <pybind11/pybind11.h>
 #include <xmsinterp/python/interpolate/interpolate_py.h>
-#include <xmsinterp/python/triangulate/triangulate_py.h>
 
 //----- Namespace declaration --------------------------------------------------
 namespace py = pybind11;
@@ -31,7 +30,4 @@ PYBIND11_MODULE(xmsinterp_py, m) {
     // Interpolate module
     py::module modInterpolate = m.def_submodule("interpolate");
     initInterpolate(modInterpolate);
-
-    py::module modTriangulate = m.def_submodule("triangulate");
-    initTriangulate(modTriangulate);
 }

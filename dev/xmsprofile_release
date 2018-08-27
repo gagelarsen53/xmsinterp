@@ -8,6 +8,7 @@ compiler.version=12
 build_type=Release
 [options]
 xmscore:xms=True
+xmsgeom:xms=True
 xmsinterp:xms=True
 [build_requires]
 [env]
